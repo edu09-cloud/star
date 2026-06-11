@@ -1,1 +1,417 @@
-<!DOCTYPE html> <html lang="ko"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>한해련 | Portfolio</title> <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <style> :root{ --bg:#f6f0e6; --bg-soft:#fbf8f2; --text:#2d2926; --sub:#7a7067; --line:#d9cfc2; --accent:#b89f82; } *{ margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; } body{ font-family:'Noto Serif KR', serif; background:var(--bg); color:var(--text); line-height:1.8; } .container{ width:min(1100px,90%); margin:auto; } /* NAV */ nav{ position:fixed; top:0; left:0; width:100%; background:rgba(246,240,230,0.92); backdrop-filter:blur(10px); z-index:1000; border-bottom:1px solid rgba(0,0,0,0.05); } .nav-inner{ width:min(1200px,92%); margin:auto; display:flex; justify-content:space-between; align-items:center; padding:22px 0; } .logo h1{ font-size:2rem; font-weight:600; } .logo span{ display:block; font-size:0.95rem; color:var(--sub); margin-top:2px; } .menu{ display:flex; gap:40px; } .menu a{ text-decoration:none; color:var(--text); font-size:0.95rem; letter-spacing:1px; transition:.3s; } .menu a:hover{ color:var(--accent); } /* HERO */ .hero{ padding-top:160px; padding-bottom:80px; } .hero h2{ font-size:4rem; font-weight:600; margin-bottom:10px; } .hero p{ font-size:1.2rem; color:var(--sub); } /* PROFILE BANNER */ .profile-banner{ background:var(--bg-soft); border:1px solid var(--line); border-radius:24px; padding:35px; display:flex; align-items:center; gap:30px; margin-bottom:100px; } .profile-img{ width:120px; height:120px; border-radius:50%; background:linear-gradient(135deg,#d9cfc2,#b89f82); display:flex; align-items:center; justify-content:center; color:white; font-size:2rem; font-weight:600; flex-shrink:0; } .profile-info{ display:flex; flex-wrap:wrap; gap:25px; font-size:1rem; } .profile-info span{ color:var(--sub); } /* SECTION */ section{ padding:70px 0; } .section-title{ font-size:2.2rem; margin-bottom:50px; position:relative; } .section-title::after{ content:""; position:absolute; left:0; bottom:-12px; width:60px; height:2px; background:var(--accent); } /* ABOUT */ .about-text{ max-width:800px; color:var(--sub); font-size:1.05rem; } /* TIMELINE */ .timeline{ position:relative; } .timeline-item{ display:grid; grid-template-columns:160px 60px 1fr; margin-bottom:50px; align-items:flex-start; } .timeline-year{ color:var(--sub); font-weight:500; } .timeline-dot{ position:relative; display:flex; justify-content:center; } .timeline-dot::before{ content:""; width:14px; height:14px; background:var(--accent); border-radius:50%; z-index:2; } .timeline-dot::after{ content:""; position:absolute; top:14px; width:2px; height:100px; background:var(--line); } .timeline-item:last-child .timeline-dot::after{ display:none; } .timeline-content h3{ font-size:1.2rem; margin-bottom:6px; } .timeline-content p{ color:var(--sub); } /* CONTACT */ .contact-box{ background:var(--bg-soft); border:1px solid var(--line); border-radius:24px; padding:40px; } .contact-item{ margin-bottom:15px; } .contact-item strong{ display:inline-block; width:90px; } /* FOOTER */ footer{ margin-top:80px; border-top:1px solid var(--line); text-align:center; padding:35px 20px; color:var(--sub); font-size:0.9rem; } /* RESPONSIVE */ @media(max-width:768px){ .hero h2{ font-size:2.5rem; } .profile-banner{ flex-direction:column; text-align:center; } .timeline-item{ grid-template-columns:90px 40px 1fr; } .menu{ gap:18px; } .menu a{ font-size:0.8rem; } } </style> </head> <body> <nav> <div class="nav-inner"> <div class="logo"> <h1>한해련</h1> <span>Social Worker Portfolio</span> </div> <div class="menu"> <a href="#about">ABOUT</a> <a href="#experience">EXPERIENCE</a> <a href="#education">EDUCATION</a> <a href="#contact">CONTACT</a> </div> </div> </nav> <div class="container"> <section class="hero"> <h2>한해련</h2> <p>사회복지사 · Professional Portfolio</p> </section> <div class="profile-banner"> <div class="profile-img">한</div> <div class="profile-info"> <div><strong>이름</strong> <span>한해련</span></div> <div><strong>거주지</strong> <span>광주광역시 광산구</span></div> <div><strong>이메일</strong> <span>gksgofus@gmail.com</span></div> </div> </div> <section id="about"> <h2 class="section-title">About</h2> <div class="about-text"> 장애인 직업재활과 정신건강 분야에서 사회복지사로 근무하며 다양한 대상자들의 자립과 사회참여를 지원해 왔습니다. 이용자 중심의 상담과 사례관리, 지역사회 연계 활동을 통해 실질적인 복지 서비스를 제공하는 데 힘써왔으며, 인간의 존엄성과 사회적 가치를 실현하는 사회복지 실천을 중요하게 생각합니다. </div> </section> <section id="experience"> <h2 class="section-title">Experience</h2> <div class="timeline"> <div class="timeline-item"> <div class="timeline-year">주요 경력</div> <div class="timeline-dot"></div> <div class="timeline-content"> <h3>사회복지사</h3> <p>장애인직업재활센터</p> </div> </div> <div class="timeline-item"> <div class="timeline-year">주요 경력</div> <div class="timeline-dot"></div> <div class="timeline-content"> <h3>사회복지사</h3> <p>정신건강센터</p> </div> </div> </div> </section> <section id="education"> <h2 class="section-title">Education</h2> <div class="timeline"> <div class="timeline-item"> <div class="timeline-year">최종 학력</div> <div class="timeline-dot"></div> <div class="timeline-content"> <h3>대학교 졸업</h3> <p>학사 학위 취득</p> </div> </div> </div> </section> <section id="contact"> <h2 class="section-title">Contact</h2> <div class="contact-box"> <div class="contact-item"> <strong>이름</strong> 한해련 </div> <div class="contact-item"> <strong>전화</strong> 010-3953-0710 </div> <div class="contact-item"> <strong>이메일</strong> gksgofus@gmail.com </div> <div class="contact-item"> <strong>거주지</strong> 광주광역시 광산구 </div> <div class="contact-item"> <strong>현직</strong> 무직 </div> <div class="contact-item"> <strong>생년월일</strong> 1981.11.10 </div> </div> </section> </div> <footer> © 2026 Han Haeryeon Portfolio. All Rights Reserved. </footer> <script> document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { e.preventDefault(); document.querySelector(this.getAttribute('href')) .scrollIntoView({ behavior: 'smooth' }); }); }); </script> </body> </html>
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한해련 | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#f6f0e6;
+    --bg-soft:#fbf8f2;
+    --text:#2d2926;
+    --sub:#7a7067;
+    --line:#d9cfc2;
+    --accent:#b89f82;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Noto Serif KR', serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.container{
+    width:min(1100px,90%);
+    margin:auto;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(246,240,230,0.92);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+    border-bottom:1px solid rgba(0,0,0,0.05);
+}
+
+.nav-inner{
+    width:min(1200px,92%);
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 0;
+}
+
+.logo h1{
+    font-size:2rem;
+    font-weight:600;
+}
+
+.logo span{
+    display:block;
+    font-size:0.95rem;
+    color:var(--sub);
+    margin-top:2px;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:var(--text);
+    font-size:0.95rem;
+    letter-spacing:1px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:var(--accent);
+}
+
+/* HERO */
+.hero{
+    padding-top:160px;
+    padding-bottom:80px;
+}
+
+.hero h2{
+    font-size:4rem;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    color:var(--sub);
+}
+
+/* PROFILE BANNER */
+.profile-banner{
+    background:var(--bg-soft);
+    border:1px solid var(--line);
+    border-radius:24px;
+    padding:35px;
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin-bottom:100px;
+}
+
+.profile-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#d9cfc2,#b89f82);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:2rem;
+    font-weight:600;
+    flex-shrink:0;
+}
+
+.profile-info{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    font-size:1rem;
+}
+
+.profile-info span{
+    color:var(--sub);
+}
+
+/* SECTION */
+section{
+    padding:70px 0;
+}
+
+.section-title{
+    font-size:2.2rem;
+    margin-bottom:50px;
+    position:relative;
+}
+
+.section-title::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-12px;
+    width:60px;
+    height:2px;
+    background:var(--accent);
+}
+
+/* ABOUT */
+.about-text{
+    max-width:800px;
+    color:var(--sub);
+    font-size:1.05rem;
+}
+
+/* TIMELINE */
+.timeline{
+    position:relative;
+}
+
+.timeline-item{
+    display:grid;
+    grid-template-columns:160px 60px 1fr;
+    margin-bottom:50px;
+    align-items:flex-start;
+}
+
+.timeline-year{
+    color:var(--sub);
+    font-weight:500;
+}
+
+.timeline-dot{
+    position:relative;
+    display:flex;
+    justify-content:center;
+}
+
+.timeline-dot::before{
+    content:"";
+    width:14px;
+    height:14px;
+    background:var(--accent);
+    border-radius:50%;
+    z-index:2;
+}
+
+.timeline-dot::after{
+    content:"";
+    position:absolute;
+    top:14px;
+    width:2px;
+    height:100px;
+    background:var(--line);
+}
+
+.timeline-item:last-child .timeline-dot::after{
+    display:none;
+}
+
+.timeline-content h3{
+    font-size:1.2rem;
+    margin-bottom:6px;
+}
+
+.timeline-content p{
+    color:var(--sub);
+}
+
+/* CONTACT */
+.contact-box{
+    background:var(--bg-soft);
+    border:1px solid var(--line);
+    border-radius:24px;
+    padding:40px;
+}
+
+.contact-item{
+    margin-bottom:15px;
+}
+
+.contact-item strong{
+    display:inline-block;
+    width:90px;
+}
+
+/* FOOTER */
+footer{
+    margin-top:80px;
+    border-top:1px solid var(--line);
+    text-align:center;
+    padding:35px 20px;
+    color:var(--sub);
+    font-size:0.9rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.hero h2{
+    font-size:2.5rem;
+}
+
+.profile-banner{
+    flex-direction:column;
+    text-align:center;
+}
+
+.timeline-item{
+    grid-template-columns:90px 40px 1fr;
+}
+
+.menu{
+    gap:18px;
+}
+
+.menu a{
+    font-size:0.8rem;
+}
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <div class="logo">
+            <h1>한해련</h1>
+            <span>Social Worker Portfolio</span>
+        </div>
+
+        <div class="menu">
+            <a href="#about">ABOUT</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#education">EDUCATION</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <section class="hero">
+        <h2>한해련</h2>
+        <p>사회복지사 · Professional Portfolio</p>
+    </section>
+
+    <div class="profile-banner">
+        <div class="profile-img">한</div>
+
+        <div class="profile-info">
+            <div><strong>이름</strong> <span>한해련</span></div>
+            <div><strong>거주지</strong> <span>광주광역시 광산구</span></div>
+            <div><strong>이메일</strong> <span>gksgofus@gmail.com</span></div>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about-text">
+            장애인 직업재활과 정신건강 분야에서 사회복지사로 근무하며 다양한 대상자들의 자립과 사회참여를 지원해 왔습니다.
+            이용자 중심의 상담과 사례관리, 지역사회 연계 활동을 통해 실질적인 복지 서비스를 제공하는 데 힘써왔으며,
+            인간의 존엄성과 사회적 가치를 실현하는 사회복지 실천을 중요하게 생각합니다.
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-year">주요 경력</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>사회복지사</h3>
+                    <p>장애인직업재활센터</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">주요 경력</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>사회복지사</h3>
+                    <p>정신건강센터</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-year">최종 학력</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>대학교 졸업</h3>
+                    <p>학사 학위 취득</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-box">
+            <div class="contact-item">
+                <strong>이름</strong> 한해련
+            </div>
+
+            <div class="contact-item">
+                <strong>전화</strong> 010-3953-0710
+            </div>
+
+            <div class="contact-item">
+                <strong>이메일</strong> gksgofus@gmail.com
+            </div>
+
+            <div class="contact-item">
+                <strong>거주지</strong> 광주광역시 광산구
+            </div>
+
+            <div class="contact-item">
+                <strong>현직</strong> 무직
+            </div>
+
+            <div class="contact-item">
+                <strong>생년월일</strong> 1981.11.10
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Han Haeryeon Portfolio. All Rights Reserved.
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+            .scrollIntoView({
+                behavior: 'smooth'
+            });
+    });
+});
+</script>
+
+</body>
+</html>
+```
